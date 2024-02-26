@@ -38,22 +38,27 @@ Assume the structure of data directories is the following:
           Test/
           Classes.names
     weights/
-      YOLOv8n.pth
-      YOLOv8x.pth
+      YOLOv8n.pt
+      YOLOv8x.pt
     ChemImgRecog.yaml
 ```
 
 *Replace uppercase letters with lowercase letters (Images→images, Labels→labels).
 
-#### Calculate mAPs
-
+#### Evaluation
+For validation data:
 ```bash
 yolo task=detect mode=val model=./weights/~.pth data=ChemImgRecog.yaml
 ```
-
+For test data:
 ```bash
 yolo task=detect mode=val model=./weights/~.pth data=ChemImgRecog.yaml split=test
 ```
 #### Predict images
+```bash
+yolo task=detect mode=predict model=./weights/~.pth source=path/*.jpg
+```
+Rewritten path to the directory containing the images.
+
 
 
