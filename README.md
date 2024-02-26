@@ -68,6 +68,18 @@ See the [3D ResNets Repo](https://github.com/kenshohara/3D-ResNets-PyTorch).
 
 Pip install the required packages; Python3, PyTorch, FFmpeg, FFprobe
 
+Convert sample videos from mp4 to jpg files 
+
+```bash
+python -m util_scripts.generate_video_jpgs ./data/sample_videos/video ./data/sample_videos/jpg/ kinetics
+```
+
+Download the trained model and move it to /data/results/.
+
+</details>
+
+<details open>
+<summary>Running</summary>
 Assume the structure of directories is the following:
 
 ```misc
@@ -88,9 +100,9 @@ Assume the structure of directories is the following:
         save_3218.pth
         opts.json
 ```
-```bash
-python -m util_scripts.generate_video_jpgs ./data/sample_videos/video ./data/sample_videos/jpg/ kinetics
-```
+
+Calculate top-3 class probabilities of sample video using the trained model (save_3218.pth)
+
 ```bash
 python main.py --root_path ./data --video_path sample_videos/jpg --annotation_path test.json --result_path results --dataset ucf101 --resume_path results/save_3218.pth --model_depth 34 --n_classes 3 --n_threads 4 --no_train --no_val --inference --output_topk 3 --inference_batch_size 1 --no_cuda
 ```
