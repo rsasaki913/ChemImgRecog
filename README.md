@@ -60,5 +60,37 @@ yolo task=detect mode=predict model=./weights/~.pth source=path/*.jpg
 ```
 Rewritten path to the directory containing the images.
 
+## <div align="center">Action Recognition</div>
+See and download the [3D ResNets Repo]([https://github.com/ultralytics/ultralytics](https://github.com/kenshohara/3D-ResNets-PyTorch)).
 
+<details open>
+<summary>Preperation</summary>
 
+Pip install the required packages; Python3, PyTorch, FFmpeg, FFprobe
+
+Assume the structure of directories is the following:
+
+```misc
+~/
+  3D-ResNets-PyTorch-master/
+    data/
+      sample_videos/
+        jpg/
+          AddingReagent/
+            Adding_sample/
+          Stirring/
+            Stirring_sample/
+          Transferring/
+            Transferring_sample/
+        video/
+        test.json
+        Classes.names
+      results/
+        save_3218.pth
+        opts.json
+    datasets/
+    models/
+    util_scripts/
+    main.py
+    the other files
+```
