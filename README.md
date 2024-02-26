@@ -24,7 +24,7 @@ Download our image dataset, [Annotated Chemical Apparatus Image Dataset](https:/
 <details open>
 <summary>Running</summary>
 
-Assume the structure of data directories is the following:
+Assume the structure of directories is the following:
 
 ```misc
 ~/
