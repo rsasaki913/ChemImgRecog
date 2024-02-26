@@ -1,7 +1,7 @@
 # Image Recognition for Chemical Experiments
 
 ## <div align="center">Object Detection</div>
-See the [YOLOv8 Docs](https://docs.ultralytics.com) and [YOLOv8 Repositry](https://github.com/ultralytics/ultralytics) for more information.
+See the [YOLOv8 Docs](https://docs.ultralytics.com) and [YOLOv8 Repo](https://github.com/ultralytics/ultralytics) for more information.
 
 <details open>
 <summary>Preperation</summary>
@@ -61,7 +61,7 @@ yolo task=detect mode=predict model=./weights/~.pth source=path/*.jpg
 Rewritten path to the directory containing the images.
 
 ## <div align="center">Action Recognition</div>
-See and download the [3D ResNets Repo]([https://github.com/ultralytics/ultralytics](https://github.com/kenshohara/3D-ResNets-PyTorch)).
+See and download the [3D ResNets Repo](https://github.com/kenshohara/3D-ResNets-PyTorch).
 
 <details open>
 <summary>Preperation</summary>
