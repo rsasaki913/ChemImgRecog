@@ -61,7 +61,7 @@ yolo task=detect mode=predict model=./weights/~.pth source=path/*.jpg
 Rewritten path to the directory containing the images.
 
 ## <div align="center">Action Recognition</div>
-See and download the [3D ResNets Repo](https://github.com/kenshohara/3D-ResNets-PyTorch).
+See the [3D ResNets Repo](https://github.com/kenshohara/3D-ResNets-PyTorch).
 
 <details open>
 <summary>Preperation</summary>
@@ -83,14 +83,14 @@ Assume the structure of directories is the following:
           Transferring/
             Transferring_sample/
         video/
-        test.json
-        Classes.names
+      test.json
       results/
         save_3218.pth
         opts.json
-    datasets/
-    models/
-    util_scripts/
-    main.py
-    the other files
+```
+```bash
+python -m util_scripts.generate_video_jpgs ./data/sample_videos/video ./data/sample_videos/jpg/ kinetics
+```
+```bash
+python main.py --root_path ./data --video_path sample_videos/jpg --annotation_path test.json --result_path results --dataset ucf101 --resume_path results/save_3218.pth --model_depth 34 --n_classes 3 --n_threads 4 --no_train --no_val --inference --output_topk 3 --inference_batch_size 1 --no_cuda
 ```
