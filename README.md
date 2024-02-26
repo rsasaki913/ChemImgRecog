@@ -1,5 +1,7 @@
 # Image Recognition for Chemical Experiments
 
+Download [the trained model file](https://drive.google.com/drive/folders/11rnudTBXG4axoF9jx2BLnaM7z9wptjEH?usp=drive_link).
+
 ## <div align="center">Object Detection</div>
 See the [YOLOv8 Docs](https://docs.ultralytics.com) and [YOLOv8 Repo](https://github.com/ultralytics/ultralytics) for more information.
 
@@ -16,6 +18,8 @@ pip install ultralytics
 Create a directory named "datasets" in "ultralytics".
 
 Move "ChemImgRecog.yaml" and "weights" to ultralytics
+
+Move "YOLOv8x.pt" to "weights"
 
 Download our image dataset, [Annotated Chemical Apparatus Image Dataset](https://data.mendeley.com/datasets/8p2hvgdvpn/1), and move it in "datasets".
 
@@ -74,7 +78,7 @@ Convert sample videos from mp4 to jpg files
 python -m util_scripts.generate_video_jpgs ./data/sample_videos/video ./data/sample_videos/jpg/ kinetics
 ```
 
-Download the trained model and move it to /data/results/.
+Move the pretrained model (save_3218.pth) to /data/results/.
 
 </details>
 
