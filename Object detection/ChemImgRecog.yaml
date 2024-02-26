@@ -1,0 +1,9 @@
+path: ./Chemical Apparatus Image Dataset
+train: ./Train
+test: ./Test
+val: ./Valid
+
+#Classes
+nc: 7
+
+names: ["hand", "conical beaker", "erlenmeyer flask", "reagent bottle", "pipette", "eggplant shaped flask", "separatory funnel"]
