@@ -6,7 +6,7 @@ Download [the trained model file](https://drive.google.com/drive/folders/11rnudT
 See the [YOLOv8 Docs](https://docs.ultralytics.com) and [YOLOv8 Repo](https://github.com/ultralytics/ultralytics) for more information.
 
 <details open>
-<summary>Preperation</summary>
+<summary>Preparation</summary>
 
 Pip install the ultralytics package including all [requirements](https://github.com/ultralytics/ultralytics/blob/main/requirements.txt) in a [**Python>=3.8**](https://www.python.org/) environment with [**PyTorch>=1.7**](https://pytorch.org/get-started/locally/).
 
@@ -68,7 +68,7 @@ Rewritten path to the directory containing the images.
 See the [3D ResNets Repo](https://github.com/kenshohara/3D-ResNets-PyTorch).
 
 <details open>
-<summary>Preperation</summary>
+<summary>Preparation</summary>
 
 Pip install the required packages; Python3, PyTorch, FFmpeg, FFprobe
 
