@@ -1,4 +1,3 @@
-### Test
 # Image Recognition for Chemical Experiments
 
 Download [the trained model file](https://drive.google.com/drive/folders/11rnudTBXG4axoF9jx2BLnaM7z9wptjEH?usp=drive_link).
